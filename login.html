@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+		body {
+			background-image: url('rose.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 110%;
+			background-position: center;
+		}
+		form {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px #888;
+			padding: 30px;
+			margin: auto;
+			margin: 150px;
+			
+			
+			max-width: 300px;
+		}
+		input[type=text], input[type=password] {
+			font-family: Gabriola,Edwardian Script ITC,Arial, sans-serif;
+			font-size: 20px;
+			color: #333;
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		#label2 {
+			font-family: Gabriola,Edwardian Script ITC,Arial, sans-serif;
+			font-size: 30px;
+			color: #333;
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		.error {
+			color: red;
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+		#label1{
+			font-family: Gabriola,Edwardian Script ITC,Arial, sans-serif;
+			font-size: 25px;
+			color: #333;
+		}
+		#error-message{
+			font-family: Gabriola,Edwardian Script ITC,Arial, sans-serif;
+			font-size: 15px;
+			color: #333;
+		}
+		
+	</style>
+</head>
+<body>
+	<form action="" method="post" >
+		<h2  id="label1">Surprise</h2>
+		<label for="username" id="label1">Name</label>
+		<input type="text" id="username" name="username" placeholder="Enter your Name">
+
+		<label for="password"  id="label1">Password</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password">
+
+		<button onclick="login()"   id="label2">Login</button>
+
+		
+	</form>
+
+	<script>
+
+		function login() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			
+        // Check if username and password are correct
+        if (username === "kavya sri" && password === "chinni") {
+          // Redirect user to the new webpage
+			window.open("homepage1.html", "self");
+        } else {
+          alert("Hint:Name Your Full Name and Password nick name.");
+        }
+      }
+	</script>
+</body>
+</html>
